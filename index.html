@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учим итальянский!!</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header class="header-box"> 
+  <div class="italian-flag"></div>
+  <h2 class="header-text">
+    итальянский с ортёмном.
+  </h2>
+  <div class="italian-flag right-flag"></div>
+</header>
+
+<div class="container">
+  <main class="grammar-container">
+    <article class="grammar-article">
+      <h3 class="grammar-name">чудеса прошедшего времени: часть 1</h3>
+      <p class="grammar-text">friendly reminder: прошедшее время в итальянском языке &mdash; сущее зло. нет в этом мире абсолютно ничего, что могло бы сравниться с отвратительностью passato prossimo. в этом обрекающем на страдания, но безумно важном разделе &mdash; об исключениях.</p>
+      <p class="grammar-text">здесь неправильные глаголы становятся причастиями:</p>
+      <ul class="list-of-verbs">
+        <li class="verb-item">leggere &mdash; letto (читать)</li>
+        <li class="verb-item">nascere &mdash; nato (рождаться)</li>
+        <li class="verb-item">venire &mdash; venuto (приходить)</li>
+        <li class="verb-item">vivere &mdash; vissuto (жить)</li>
+        <li class="verb-item">bere &mdash; bevuto (пить)</li>
+        <li class="verb-item">piangere &mdash; pianto (рождаться)</li>
+        <li class="verb-item">vincere &mdash; vinto (побеждать)</li>
+        <li class="verb-item">spengere &mdash; spento (выключать)</li>
+        <li class="verb-item">giungere &mdash; giunto (добираться)</li>
+        <li class="verb-item">scrivere &mdash; scritto (писать)</li>
+        <li class="verb-item">cuocere &mdash; cotto (готовить)</li>
+        <li class="verb-item">tradurre &mdash; tradotto (переводить)</li>
+        <li class="verb-item">rompere &mdash; rotto (ломать)</li>
+        <li class="verb-item">correggere &mdash; corretto (поправлять)</li>
+      </ul>
+      <p class="grammar-text">на самом деле, таких глаголов гораздо-гораздо больше, но об этом чуть позже)</p>
+    </article>
+    <article class="grammar-article">
+      очередной
+    </article>
+  </main>
+
+  <aside class="aside-container">
+    <section class="search-words">
+      <h4 class="headline">Быстрый поиск итальянских слов из твоего словаря!</h4>
+      <form class="search-form">
+        <label class="label">
+          <input class="search-input" type="search" placeholder="если ты не можешь вспомнить слово лол)" required>
+          <span class="visually-hidden">Найти</span>
+        </label>
+        <button class="button-search" type="submit">
+          <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+            <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z" />
+          </svg>
+          <span class="visually-hidden">Найти</span>
+        </button>
+      </form>
+    </section>
+
+    <section class="word-reminder">
+      <h5 class="headline">25 случайных слов на каждый день:</h5>
+      <div class="word-box">
+        <div class="word-italian">gestire</div>
+        <div class="word-russian">управлять</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">tingere</div>
+        <div class="word-russian">красить</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">pietra</div>
+        <div class="word-russian">камень</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">palla</div>
+        <div class="word-russian">мяч</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">invidiare</div>
+        <div class="word-russian">завидовать</div>
+      </div>
+      <div class="button-word-box-wrapper">
+        <button class="button-word-box" type="button" id="hider"><span class="button-word-text">Показать ещё...</span>
+        <span class="visually-hidden">Показать ещё слова</span>
+        </button>
+      </div>
+      <script type="text/javascript">
+        document.getElementById('hider').onclick = function () {
+          document.getElementById('hidden-words').style.display='block'; 
+          document.getElementById('hider').style.display='none'; 
+        }
+      </script>
+      <div class="hidden-words-wrapper" id="hidden-words">
+        <div class="word-box">
+          <div class="word-italian">dapertutto</div>
+          <div class="word-russian">везде</div>
+        </div>
+        <div class="word-box">
+          <div class="word-italian">portone</div>
+          <div class="word-russian">входная дверь</div>
+        </div>
+        <div class="word-box">
+          <div class="word-italian">svillupare</div>
+          <div class="word-russian">развивать</div>
+        </div>
+      <div class="word-box">
+        <div class="word-italian">diffuso</div>
+        <div class="word-russian">распространённый</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">svolgere</div>
+        <div class="word-russian">выполнять</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">mozzafiato</div>
+        <div class="word-russian">захватывающий дух</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">vantaggio</div>
+        <div class="word-russian">преимущество</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">degne di nota</div>
+        <div class="word-russian">заслуживает внимания</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">pista di corse</div>
+        <div class="word-russian">беговая дорожка</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">timido</div>
+        <div class="word-russian">застенчивый</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">asciugare</div>
+        <div class="word-russian">сушить</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">farcela</div>
+        <div class="word-russian">справляться с чем-то</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">accumulare</div>
+        <div class="word-russian">хранить</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">insistere</div>
+        <div class="word-russian">настаивать</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">rotto</div>
+        <div class="word-russian">сломанный</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">mantenere</div>
+        <div class="word-russian">поддерживать</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">visto che</div>
+        <div class="word-russian">раз уж так, поскольку</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">tiffoso</div>
+        <div class="word-russian">фанат</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">liscio</div>
+        <div class="word-russian">гладкий, ровный; медляк</div>
+      </div>
+      <div class="word-box">
+        <div class="word-italian">pericoloso</div>
+        <div class="word-russian">опасный</div>
+      </div>
+    </div>
+    </section>
+  </aside>
+</div>
