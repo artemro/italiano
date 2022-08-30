@@ -6,7 +6,7 @@ body {
   font-family: "Merriweather";
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
 }
 
@@ -51,14 +51,17 @@ h1, h2, h3 {
 }
 
 .container {
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-top: 50px;
+  max-width: 1200px; 
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .grammar-container {
-  flex-grow: 5;
-  max-width: 768px;
+  width: 720px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
 }
 
 .grammar-article {
@@ -78,10 +81,14 @@ h1, h2, h3 {
 }
 
 .aside-container {
-  flex-grow: 2;
-  margin-left: 5%;
+  margin-left: 10%;
   max-width: 540px;
   min-width: 320px;
+}
+
+.headline {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .search-form {
@@ -89,8 +96,9 @@ h1, h2, h3 {
   height: 45px;
 }
 
-.label {
+.label-search-words {
   width: 100%;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-input {
@@ -110,6 +118,11 @@ h1, h2, h3 {
   height: 45px;
   border: none;
   background-color: #bb9d54;
+}
+
+.button-search:hover {
+  cursor: pointer;
+  background-color: #a4853e;
 }
 
 .word-reminder {
@@ -148,17 +161,18 @@ h1, h2, h3 {
 .button-word-box {
   border-radius: 10px;
   width: 30%; 
-  background-color: #fef4dc;
+  background-color: #fff;
   font-family: inherit;
-  border: 0;
+  border: 3px #fef4dc solid;
   height: 30px;
   margin-top: 20px;
   margin-bottom: 8px;
+  box-sizing: content-box;
 }
 
 .button-word-box:hover {
   cursor: pointer;
-}
+} 
 
 .button-word-text {
   opacity: 0.6;
@@ -167,6 +181,10 @@ h1, h2, h3 {
 }
 
 .hidden-words-wrapper {
+  display: none;
+}
+
+#close-button {
   display: none;
 }
 

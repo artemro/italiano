@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <header class="header-box"> 
   <div class="italian-flag"></div>
   <h2 class="header-text">
@@ -23,16 +24,15 @@
 <div class="container">
   <main class="grammar-container">
     <article class="grammar-article">
-      <h3 class="grammar-name">чудеса прошедшего времени: часть 1</h3>
-      <p class="grammar-text">friendly reminder: прошедшее время в итальянском языке &mdash; сущее зло. нет в этом мире абсолютно ничего, что могло бы сравниться с отвратительностью passato prossimo. в этом обрекающем на страдания, но безумно важном разделе &mdash; об исключениях.</p>
-      <p class="grammar-text">здесь неправильные глаголы становятся причастиями:</p>
+      <h3 class="grammar-name">исключения прошедшего времени: часть 1</h3>
+      <p class="grammar-text">в этом разделе будем ставить неправильные глаголы в partecipio passato, страдать и зубрить, страдать и зубрить</p>
       <ul class="list-of-verbs">
         <li class="verb-item">leggere &mdash; letto (читать)</li>
         <li class="verb-item">nascere &mdash; nato (рождаться)</li>
         <li class="verb-item">venire &mdash; venuto (приходить)</li>
         <li class="verb-item">vivere &mdash; vissuto (жить)</li>
         <li class="verb-item">bere &mdash; bevuto (пить)</li>
-        <li class="verb-item">piangere &mdash; pianto (рождаться)</li>
+        <li class="verb-item">piangere &mdash; pianto (плакать)</li>
         <li class="verb-item">vincere &mdash; vinto (побеждать)</li>
         <li class="verb-item">spengere &mdash; spento (выключать)</li>
         <li class="verb-item">giungere &mdash; giunto (добираться)</li>
@@ -42,10 +42,28 @@
         <li class="verb-item">rompere &mdash; rotto (ломать)</li>
         <li class="verb-item">correggere &mdash; corretto (поправлять)</li>
       </ul>
-      <p class="grammar-text">на самом деле, таких глаголов гораздо-гораздо больше, но об этом чуть позже)</p>
+      <p class="grammar-text">жалко, что это только первая часть...</p>
     </article>
     <article class="grammar-article">
-      очередной
+      <h3 class="grammar-name">глагол farcela: что это такое и зачем он нужен</h3>
+      <p class="grammar-text">решил, что этот глагол требует отдельной грамматической карточки, не так часто встречаются глаголы с местоимениями.</p>
+      <p class="grammar-text">означает он "справиться с чем-то", "быть способным сделать что-то", такой аналог riuscire, только более разговорный. особенно полезен в контексте "ты можешь сделать это?".</p>
+      <p class="grammar-text">осталось только проспрягать:</p>
+      <ul class="list-of-verbs">
+        <li class="verb-item">ce la faccio</li>
+        <li class="verb-item">ce la fai</li>
+        <li class="verb-item">ce la fa</li>
+        <li class="verb-item">ce la facciamo</li>
+        <li class="verb-item">ce la fatte</li>
+        <li class="verb-item">ce la fanno</li>        
+      </ul>
+    </article>
+    <article class="grammar-article">
+      <h3 class="grammar-name">Фразы с -ne: часть 1</h3>
+      <p class="grammar-text">как говорила Кэти, чем лучше используешь этот предлог, тем больше похож на носителя, так что вперёд, к изучению!</p>
+      <p class="grammar-text">ne vale la pena &mdash; про эту фразу я и так всё знаю, идём дальше</p>
+      <p class="grammar-text">farne a meno &mdash; обходиться без чего-либо, posso farne a meno &mdash; могу спокойно выжить без этого, ничего страшного</p>
+      <p class="grammar-text">pentirsene &mdash; сожалеть о чём-то, например, ты попробовал пиццу с ананасом и всё, что остаётся тебе сказать на этот счёт &mdash; me ne pento.</p>
     </article>
   </main>
 
@@ -53,8 +71,8 @@
     <section class="search-words">
       <h4 class="headline">Быстрый поиск итальянских слов из твоего словаря!</h4>
       <form class="search-form">
-        <label class="label">
-          <input class="search-input" type="search" placeholder="если ты не можешь вспомнить слово лол)" required>
+        <label class="label-search-words">
+          <input class="search-input" type="search" placeholder="давай сам вспоминай!" required>
           <span class="visually-hidden">Найти</span>
         </label>
         <button class="button-search" type="submit">
@@ -89,14 +107,15 @@
         <div class="word-russian">завидовать</div>
       </div>
       <div class="button-word-box-wrapper">
-        <button class="button-word-box" type="button" id="hider"><span class="button-word-text">Показать ещё...</span>
+        <button class="button-word-box" type="button" id="open-button"><span class="button-word-text">Показать ещё...</span>
         <span class="visually-hidden">Показать ещё слова</span>
         </button>
       </div>
       <script type="text/javascript">
-        document.getElementById('hider').onclick = function () {
+        document.getElementById('open-button').onclick = function () {
           document.getElementById('hidden-words').style.display='block'; 
-          document.getElementById('hider').style.display='none'; 
+          document.getElementById('open-button').style.display='none'; 
+          document.getElementById('close-button').style.display='block';
         }
       </script>
       <div class="hidden-words-wrapper" id="hidden-words">
@@ -181,6 +200,19 @@
         <div class="word-russian">опасный</div>
       </div>
     </div>
+    <div class="button-word-box-wrapper">
+        <button class="button-word-box" type="button" id="close-button"><span class="button-word-text">Свернуть</span>
+        <span class="visually-hidden">Свернуть слова</span>
+        </button>
+      </div>
+      <script type="text/javascript">
+        document.getElementById('close-button').onclick = function () {
+          document.getElementById('close-button').style.display = 'none';
+          document.getElementById('hidden-words').style.display = 'none';
+          document.getElementById('open-button').style.display='block'; 
+        }
+      </script>
     </section>
+
   </aside>
 </div>
